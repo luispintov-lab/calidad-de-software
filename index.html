@@ -1,184 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduTech Learning System - Calidad de Software</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f4f6f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #004aad;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        header h1 {
-            margin: 0;
-        }
-        main {
-            max-width: 900px;
-            margin: 30px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #004aad;
-            border-bottom: 2px solid #004aad;
-            padding-bottom: 5px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        .benefits {
-            background: #eaf1ff;
-            padding: 15px;
-            border-left: 5px solid #004aad;
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            background: #004aad;
-            color: white;
-            padding: 15px 0;
-            margin-top: 40px;
-        }
-        .quiz {
-            background: #fff5e6;
-            padding: 20px;
-            border-radius: 10px;
-            border: 2px solid #ffb400;
-        }
-        .quiz label {
-            display: block;
-            margin: 10px 0;
-        }
-        button {
-            background: #004aad;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background: #0062cc;
-        }
-        #resultado {
-            margin-top: 15px;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyecto de Calidad de Software</title>
+  <style>
+    :root {
+      --accent: #0b5ed7;
+      --muted: #6c757d;
+      --bg: #f7f9fc;
+      --shadow: 0 1px 6px rgba(16, 24, 40, 0.06);
+    }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      padding: 18px 24px;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 0;
+      color: var(--accent);
+    }
+
+    nav {
+      margin-top: 8px;
+    }
+
+    nav a {
+      color: var(--accent);
+      margin-right: 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 10px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    section {
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 4px;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0948a5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>EduTech Learning System</h1>
-        <p>Calidad de Software en entornos educativos y reales</p>
-    </header>
+  <header>
+    <h1>Proyecto Final – Calidad de Software</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Documentación</a>
+      <a href="#">Equipo</a>
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <h2>¿Qué es la Calidad de Software?</h2>
-            <p>
-                La <strong>calidad de software</strong> se refiere al grado en que un sistema, componente o proceso cumple con los 
-                requisitos funcionales y no funcionales establecidos. Un software de calidad no solo funciona correctamente, sino que 
-                también es confiable, eficiente, mantenible y fácil de usar.
-            </p>
-        </section>
+  <main>
+    <section>
+      <h2>Descripción del Proyecto</h2>
+      <p>Este proyecto tiene como objetivo aplicar los principios de calidad de software mediante el desarrollo de una aplicación web funcional, manteniendo las mejores prácticas de diseño y validación.</p>
+    </section>
 
-        <section>
-            <h2>Importancia en el desarrollo de proyectos</h2>
-            <p>
-                Aplicar buenas prácticas de calidad en software es fundamental en entornos educativos y reales, ya que fomenta el 
-                pensamiento crítico, la planificación adecuada y la creación de soluciones tecnológicas sostenibles.
-            </p>
-            <ul>
-                <li>Mejora la experiencia del usuario final.</li>
-                <li>Reduce errores y costos de mantenimiento.</li>
-                <li>Facilita el trabajo colaborativo entre equipos.</li>
-                <li>Permite escalabilidad y adaptación a nuevos requerimientos.</li>
-            </ul>
-        </section>
+    <section>
+      <h2>Funcionalidades</h2>
+      <ul>
+        <li>Registro de usuarios</li>
+        <li>Control de versiones con Git</li>
+        <li>Validaciones automáticas</li>
+      </ul>
+    </section>
 
-        <section class="benefits">
-            <h2>Beneficios de las buenas prácticas</h2>
-            <p>Implementar buenas prácticas de calidad de software garantiza:</p>
-            <ul>
-                <li>Código limpio y bien documentado.</li>
-                <li>Mayor seguridad y rendimiento.</li>
-                <li>Entrega más rápida de productos estables.</li>
-                <li>Mayor satisfacción del cliente y del equipo de desarrollo.</li>
-            </ul>
-        </section>
+    <section>
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre completo">
 
-        <section class="quiz">
-            <h2>Evaluador interactivo</h2>
-            <p>Responde las siguientes preguntas y evalúa tu comprensión sobre la calidad del software:</p>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" placeholder="ejemplo@email.com">
 
-            <form id="quizForm">
-                <label>
-                    1️⃣ ¿Qué significa tener software de calidad?
-                    <br>
-                    <input type="radio" name="p1" value="0"> Que funcione sin importar los errores<br>
-                    <input type="radio" name="p1" value="1"> Que cumpla con requisitos funcionales y no funcionales<br>
-                    <input type="radio" name="p1" value="0"> Que se vea bonito<br>
-                </label>
+        <b
 
-                <label>
-                    2️⃣ ¿Por qué es importante documentar el código?
-                    <br>
-                    <input type="radio" name="p2" value="1"> Facilita mantenimiento y comprensión del sistema<br>
-                    <input type="radio" name="p2" value="0"> Para ocupar más espacio<br>
-                    <input type="radio" name="p2" value="0"> No es importante<br>
-                </label>
 
-                <label>
-                    3️⃣ Una buena práctica en proyectos de software es:
-                    <br>
-                    <input type="radio" name="p3" value="1"> Hacer pruebas unitarias y de integración<br>
-                    <input type="radio" name="p3" value="0"> No hacer copias de seguridad<br>
-                    <input type="radio" name="p3" value="0"> Programar sin planificar<br>
-                </label>
-
-                <button type="button" onclick="calcularResultado()">Evaluar</button>
-                <div id="resultado"></div>
-            </form>
-        </section>
-    </main>
-    Actualizar autor y pequeños textos
-
-    <footer>
-        <p>© 2025 EduTech Learning System | Desarrollado por Luis Alfonso Pinto Villegas</p>
-    </footer>
-
-    <script>
-        function calcularResultado() {
-            let total = 0;
-            const respuestas = document.querySelectorAll('input[type="radio"]:checked');
-            respuestas.forEach(r => total += parseInt(r.value));
-            
-            let mensaje = "";
-            if (total === 3) mensaje = "¡Excelente! Tienes un conocimiento sólido sobre calidad de software.";
-            else if (total === 2) mensaje = "¡Muy bien! Solo necesitas reforzar algunos conceptos.";
-            else mensaje = "Debes repasar un poco más los temas. ¡Sigue aprendiendo!";
-
-            document.getElementById("resultado").innerText = `Puntaje: ${total}/3 - ${mensaje}`;
-        }
-    </script>
-</body>
-</html>
-<p>© 2025 EduTech Learning System | Desarrollado por Luis Alfonso Pinto Villegas</p>
