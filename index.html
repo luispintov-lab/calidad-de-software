@@ -1,130 +1,191 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Proyecto de Calidad de Software</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calidad de Software</title>
+
+  <!-- Fuente y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --accent: #0b5ed7;
-      --muted: #6c757d;
-      --bg: #f7f9fc;
-      --shadow: 0 1px 6px rgba(16, 24, 40, 0.06);
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
 
     body {
-      font-family: "Inter", Arial, sans-serif;
-      margin: 0;
-      background: var(--bg);
-      color: #222;
+      background: #f4f6f8;
+      color: #333;
       line-height: 1.6;
     }
 
     header {
-      background: white;
-      padding: 18px 24px;
-      box-shadow: var(--shadow);
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      background: linear-gradient(90deg, #004aad, #007bff);
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
-    h1 {
-      font-size: 22px;
-      margin: 0;
-      color: var(--accent);
+    header h1 {
+      font-size: 2rem;
     }
 
     nav {
-      margin-top: 8px;
+      background: #003a8c;
+      text-align: center;
+      padding: 0.5rem 0;
     }
 
     nav a {
-      color: var(--accent);
-      margin-right: 12px;
+      color: #fff;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: 600;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #ffdd57;
     }
 
     main {
-      max-width: 960px;
-      margin: 30px auto;
-      background: white;
-      border-radius: 10px;
-      padding: 24px;
-      box-shadow: var(--shadow);
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
 
     section {
-      margin-bottom: 24px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
-    h2 {
-      color: var(--accent);
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 4px;
-    }
-
-    .btn {
-      background: var(--accent);
-      color: white;
-      padding: 10px 14px;
-      border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background: #0948a5;
+    section h2 {
+      color: #004aad;
+      border-left: 5px solid #004aad;
+      padding-left: 10px;
+      margin-bottom: 1rem;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 14px;
+      padding: 1rem;
+      background: #003a8c;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #ffdd57;
+      text-decoration: none;
+    }
+
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Proyecto Final – Calidad de Software</h1>
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Documentación</a>
-      <a href="#">Equipo</a>
-    </nav>
+    <h1>Calidad de Software</h1>
+    <p>Conceptos, normas, modelos, estándares y prácticas profesionales</p>
   </header>
 
+  <nav>
+    <a href="#normas">Normas</a>
+    <a href="#modelos">Modelos</a>
+    <a href="#estandares">Estándares</a>
+    <a href="#codigo">Código</a>
+    <a href="#pruebas">Pruebas</a>
+  </nav>
+
   <main>
-    <section>
-      <h2>Descripción del Proyecto</h2>
-      <p>Este proyecto tiene como objetivo aplicar los principios de calidad de software mediante el desarrollo de una aplicación web funcional, manteniendo las mejores prácticas de diseño y validación.</p>
+    <section id="introduccion">
+      <h2>¿Qué es la calidad de software?</h2>
+      <p>
+        La <strong>calidad de software</strong> se refiere al grado en que un sistema, componente o proceso cumple los requisitos especificados y las necesidades o expectativas del usuario. 
+        Implica mantener buenas prácticas durante todo el ciclo de vida del desarrollo: análisis, diseño, codificación, pruebas y mantenimiento.
+      </p>
     </section>
 
-    <section>
-      <h2>Funcionalidades</h2>
+    <section id="normas">
+      <h2>Normas de Calidad</h2>
+      <p>
+        Las normas proporcionan lineamientos y criterios para medir la calidad de un producto de software. Algunas de las más utilizadas son:
+      </p>
       <ul>
-        <li>Registro de usuarios</li>
-        <li>Control de versiones con Git</li>
-        <li>Validaciones automáticas</li>
+        <li><strong>ISO/IEC 25010:</strong> Define un modelo de calidad que evalúa características como funcionalidad, fiabilidad, usabilidad, eficiencia y mantenibilidad.</li>
+        <li><strong>ISO/IEC 12207:</strong> Describe los procesos del ciclo de vida del software, desde la concepción hasta el retiro del sistema.</li>
+        <li><strong>ISO 9001:</strong> Norma general de gestión de calidad aplicable también a procesos de desarrollo de software.</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Contacto</h2>
-      <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Tu nombre completo">
+    <section id="modelos">
+      <h2>Modelos de Calidad</h2>
+      <p>
+        Los modelos de calidad ayudan a evaluar y mejorar la madurez de los procesos de desarrollo. Entre los más relevantes encontramos:
+      </p>
+      <ul>
+        <li><strong>CMMI (Capability Maturity Model Integration):</strong> Evalúa el nivel de madurez de los procesos de desarrollo.</li>
+        <li><strong>SPICE (ISO/IEC 15504):</strong> Modelo internacional para la evaluación y mejora de procesos de software.</li>
+        <li><strong>Six Sigma:</strong> Estrategia de mejora basada en la reducción de defectos y la optimización de procesos.</li>
+      </ul>
+    </section>
 
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" placeholder="ejemplo@email.com">
+    <section id="estandares">
+      <h2>Estándares</h2>
+      <p>
+        Los estándares definen buenas prácticas para el desarrollo, documentación y gestión del software. Por ejemplo:
+      </p>
+      <ul>
+        <li><strong>IEEE 829:</strong> Estándar para documentación de pruebas de software.</li>
+        <li><strong>IEEE 830:</strong> Estándar para especificación de requisitos de software (SRS).</li>
+        <li><strong>IEEE 1012:</strong> Estándar de verificación y validación de software.</li>
+      </ul>
+    </section>
 
-        <b
+    <section id="codigo">
+      <h2>Código y Programación</h2>
+      <p>
+        Un código de calidad debe ser legible, modular y mantenible. Por ejemplo:
+      </p>
+      <pre><code>
+// Ejemplo de función en JavaScript
+function calcularPromedio(notas) {
+  let suma = 0;
+  for (let n of notas) {
+    suma += n;
+  }
+  return (suma / notas.length).toFixed(2);
+}
+      </code></pre>
+      <p>Este tipo de buenas prácticas permiten reducir errores y facilitar la revisión del código.</p>
+    </section>
 
+    <section id="pruebas">
+      <h2>Pruebas y Evaluación</h2>
+      <p>
+        Las pruebas permiten detectar defectos y asegurar que el software cumpla con los requisitos. Existen varios tipos:
+      </p>
+      <ul>
+        <li><strong>Pruebas unitarias:</strong> Verifican cada módulo o función por separado.</li>
+        <li><strong>Pruebas de integración:</strong> Evalúan la comunicación entre los componentes.</li>
+        <li><strong>Pruebas de aceptación:</strong> Confirman que el sistema cumple las expectativas del usuario final.</li>
+      </ul>
+    </section>
+  </main>
 
+  <footer>
+    <p>Desarrollado por <strong>Luis Pinto</strong> | Proyecto académico - Calidad de Software</p>
+    <p><a href="https://github.com/luispintov-lab/calidad-de-software" target="_blank">Repositorio GitHub</a></p>
+  </footer>
+</body>
+</html>
